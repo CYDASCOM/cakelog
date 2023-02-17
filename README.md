@@ -1,4 +1,4 @@
-# About
+### About
 
 A CLI Tool to make looking up cakephp's log more easily.
 
