@@ -1,0 +1,29 @@
+{
+  "name": "cakelog",
+  "version": "1.0.1",
+  "description": "A CLI Tool to make Looking up cakephp's log more easily.",
+  "main": "index.js",
+  "bin": {
+    "cakelog": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CYDASCOM/cakelog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CYDASCOM/cakelog/issues"
+  },
+  "homepage": "https://github.com/CYDASCOM/cakelog#readme",
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "commander": "^10.0.0",
+    "sql-formatter": "^10.1.0",
+    "sql-highlight": "^4.3.1"
+  }
+}
