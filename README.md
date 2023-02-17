@@ -1,6 +1,6 @@
 # About
 
-A CLI Tool to make Looking up cakephp's log more easily.
+A CLI Tool to make looking up cakephp's log more easily.
 
 ### Install
 
@@ -21,10 +21,19 @@ Options:
   -h, --help      Display help for command
 ```
 
-### --debug
+
+##### no option
 
 ```sh
-cakelog --debug # or cakelog -d
+cakelog
+```
+
+Like Linux command `tail -f`, output the latest logs. **[NOT RECOMMEND]**
+
+##### --debug
+
+```sh
+cakelog --debug
 ```
 
 Just output `Debug` logs where is using:
@@ -33,10 +42,10 @@ Just output `Debug` logs where is using:
 CakeLog::debug();
 ```
 
-### --info
+##### --info
 
 ```sh
-cakelog --info # or cakelog -i
+cakelog --info
 ```
 
 Just output `Info` logs where is using:
@@ -45,25 +54,25 @@ Just output `Info` logs where is using:
 CakeLog::info();
 ```
 
-### --nosql
+##### --nosql
 
 ```sh
-cakelog --info # or cakelog -nos
+cakelog --nosql
 ```
 
-There are so many sql's logs, using `--nosql` to ignore all sql log output, make us focus on debug or info logs.
+There are so many sql logs, using `--nosql` to ignore all sql log output, when we want to focus on `debug` or `info` logs. **[RECOMMEND]**
 
-### --sql
+##### --sql
 
 ```sh
-cakelog --sql # or cakelog -s
+cakelog --sql
 ```
 
-Sometimes, we want to see the sql created by cakephp, for this scenario, add `CakeLog::info("After Query");` after query statement like this:
+Sometimes, we want to see the sql created by cakephp, for this scenario, add `CakeLog::info("After Query");` after query statement immediately like this:
 
 ```php
 $records = $model->find('all', compact('joins', 'fields', 'conditions', 'order', 'limit', 'offset'));
 CakeLog::info("After Query");
 ```
 
-then, cakelog will just output the sql log before `After Query` log and the sql will be formatted and highlighted.
+then, cakelog will just output the sql log above `After Query` log and the sql will be formatted and highlighted. **[RECOMMEND]**
