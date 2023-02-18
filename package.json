@@ -1,7 +1,7 @@
 {
   "name": "cakelog",
   "version": "1.0.2",
-  "description": "A CLI Tool to make Looking up cakephp's log more easily.",
+  "description": "A CLI Tool to make looking up cakephp's log more easily.",
   "main": "index.js",
   "bin": {
     "cakelog": "./index.js"
