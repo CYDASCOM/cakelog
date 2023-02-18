@@ -21,14 +21,13 @@ Options:
   -h, --help      Display help for command
 ```
 
-
 ##### no option
 
 ```sh
 cakelog
 ```
 
-Like Linux command `tail -f`, output the latest logs. **[NOT RECOMMEND]**
+Like Linux command `tail -f`, output the latest logs.
 
 ##### --debug
 
@@ -60,7 +59,7 @@ CakeLog::info();
 cakelog --nosql
 ```
 
-There are so many sql logs, using `--nosql` to ignore all sql log output, when we want to focus on `debug` or `info` logs. **[RECOMMEND]**
+There are so many sql logs, using `--nosql` to ignore all sql log output, when we want to focus on `debug` or `info` logs.
 
 ##### --sql
 
@@ -75,4 +74,4 @@ $records = $model->find('all', compact('joins', 'fields', 'conditions', 'order',
 CakeLog::info("After Query");
 ```
 
-then, cakelog will just output the sql log above `After Query` log and the sql will be formatted and highlighted. **[RECOMMEND]**
+then, cakelog will just output the sql log above `After Query` log and the sql will be formatted and highlighted.

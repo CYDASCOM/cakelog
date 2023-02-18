@@ -1,13 +1,13 @@
 {
   "name": "cakelog",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A CLI Tool to make Looking up cakephp's log more easily.",
   "main": "index.js",
   "bin": {
     "cakelog": "./index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,8 @@
     "commander": "^10.0.0",
     "sql-formatter": "^10.1.0",
     "sql-highlight": "^4.3.1"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
   }
 }
