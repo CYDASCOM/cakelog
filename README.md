@@ -1,5 +1,7 @@
 ### About
 
+[![Node.js CI](https://github.com/CYDASCOM/cakelog/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/CYDASCOM/cakelog/actions/workflows/test.yml)
+
 A CLI Tool to make looking up cakephp's log more easily.
 
 ### Install
