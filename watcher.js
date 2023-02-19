@@ -2,8 +2,10 @@ const chokidar = require('chokidar');
 const fs = require('fs');
 const loader = require('./loader');
 
+const WATCH_DIR = process.env.WATCH_DIR || '/app/tmp/logs'
+
 module.exports = (options) => {
-    const logDir = process.cwd() + '/app/tmp/logs';
+    const logDir = process.cwd() + WATCH_DIR;
 
     if (!fs.existsSync(logDir)) {
         console.log('Error: app/tmp/logs directory is not exist');

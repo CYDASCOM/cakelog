@@ -9,6 +9,9 @@
   "scripts": {
     "test": "mocha"
   },
+  "files": [
+    "./*.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CYDASCOM/cakelog.git"
